@@ -25,7 +25,7 @@ public class DepositCalculator {
         int amount;
         int period;
         int action;
-        double yearRate = 0.06;
+        double yearRate = 0.06;  // хорошее решение- создать переменные
         double finalAmount = 0;
 
         Scanner scanner = new Scanner(System.in);
