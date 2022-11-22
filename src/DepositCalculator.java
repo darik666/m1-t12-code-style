@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner;    //хорошо что импорт оптимизирован
 
 
 public class DepositCalculator {
@@ -26,7 +26,7 @@ public class DepositCalculator {
         action = scanner.nextInt();
         double result = 0;
         if (action == 1) {
-            result = calculateSimplePercent(amount, 0.06, period);
+            result = calculateSimplePercent(amount, 0.06, period);    //0.06 лучше вынести в переменную
         } else if (action == 2) {
             result = calculateComplexPercent(amount, 0.06, period);
         }
